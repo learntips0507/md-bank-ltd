@@ -32,13 +32,13 @@
             <div class="col-md-4">
                 <div class="withdraw money-state">
                     <h5>Withdraw</h5>
-                    <h1>$00</h1>
+                    <h1>$<span id="withdrawBtnAmount">00</span></h1>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="balance money-state">
                     <h5>Balance</h5>
-                    <h1>$1240</h1>
+                    <h1>$<span id="balanceAmount">1240</span></h1>
                 </div>
             </div>
         </div>
@@ -54,13 +54,16 @@
             <div class="col-md-6">
                 <div class="login-form">
                     <h4>Withdraw</h4>
-                    <input type="text" class="form-control" placeholder="$ amount you want to withdraw">
+                    <input id="withdrawAmount" type="text" class="form-control" placeholder="$ amount you want to withdraw">
                     <br>
-                    <button class="btn btn-primary">withdraw</button>
+                    <button id="withdrawBtn" class="btn btn-primary">withdraw</button>
                 </div>
             </div>
         </div>
     </section>
+
+
+
     <script src="js/main.js"></script>
 </body>
 </html>
